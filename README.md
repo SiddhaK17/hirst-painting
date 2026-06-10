@@ -58,7 +58,7 @@ This project was built as part of a comprehensive Python learning journey throug
 ## 📁 Project Structure
 
 ```
-hirst-painting/
+Hirst-Painting/
     ├── main.py     # Core script for generating the painting
     └── README.md   # Project documentation
 ```
@@ -80,12 +80,12 @@ hirst-painting/
 
 2. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/hirst-painting.git
+   git clone https://github.com/your-username/Hirst-Painting.git
    ```
 
 3. **Navigate to the project folder**
    ```bash
-   cd hirst-painting
+   cd Hirst-Painting
    ```
 
 > 💡 **Optional – Windows Only:** If you encounter errors related to `TCL_LIBRARY` or `TK_LIBRARY`, ensure that your Python installation's Tcl paths are correctly set using `os.environ` at the beginning of your script:
