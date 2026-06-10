@@ -22,8 +22,9 @@ This project was built as part of a comprehensive Python learning journey throug
 - **Random Module**: Provides randomness to color selection, creating a unique painting every time the program is executed.
 - **Coordinate Geometry**: The turtle’s motion is controlled using angular and directional logic to navigate a 2D plane for structured output.
 - **Pen Control**: Techniques such as `penup()`, `dot()`, and `setheading()` are used to control drawing behavior precisely without connecting lines.
-- **Environment Variable Configuration**: For Windows systems, the script ensures proper `TCL` and `TK` bindings by explicitly setting environment variables when using `tkinter` based libraries.
-
+- **Configurable Drawing Parameters**: Constants such as **`DOT_SIZE`**, **`DOT_SPACING`**, **`GRID_SIZE`**, and **`START_OFFSET`** allow the artwork layout to be customized without modifying the core drawing algorithm.
+- **Maintainable Code Design**: Replacing hardcoded values with named constants improves readability, scalability, and ease of experimentation.
+- **Optional Windows Compatibility Configuration**: Environment variable paths for `TCL` and `TK` can be configured if required on certain Windows installations, but are not mandatory for most Python setups.
 ---
 
 ## 🎮 Program Logic
@@ -42,7 +43,8 @@ This project was built as part of a comprehensive Python learning journey throug
    - A curated list of RGB color tuples is used to provide a rich set of contrasting and complementary tones to mimic real life painted dot aesthetics.
 
 5. **Grid Drawing Algorithm**:
-   - A loop runs 100 times to generate a 10x10 dot matrix.
+   - A loop dynamically generates a **GRID_SIZE × GRID_SIZE** matrix of colored dots.
+   - The total number of dots is calculated programmatically, making the artwork easily scalable without changing the drawing logic.
    - For each iteration:
      - A dot of fixed size (20px) is stamped with a randomly chosen color.
      - The turtle moves forward by 50px to place the next dot.
@@ -119,9 +121,10 @@ Here is an example of the output:
 - 🎨 **Dynamic Artwork Creation:** Programmatically generates unique Hirst style dot paintings with vibrant randomized color palettes.
 - 🐢 **Turtle Graphics Power:** Leverages Python’s `turtle` module to create pixel perfect grid based patterns on screen.
 - 🎲 **Color Randomization:** Utilizes a custom palette extracted from real artwork using `colorgram.py` to ensure authenticity.
-- ⚙️ **Customizable Canvas:** Easily tweak grid size, spacing, and color range for personalized visual outputs.
+- ⚙️ **Highly Configurable Artwork Generation:** Core parameters such as **dot size**, **dot spacing**, **grid dimensions**, and **starting position** are controlled through constants, making experimentation and customization effortless.
 - 📁 **Clean Code Architecture:** Modular, scalable design with separated logic for clarity and maintainability.
 - 🧪 **Test Friendly Logic:** Written in a readable, structured manner that encourages experimentation and learning.
+- 🎲 **Unique Output Every Run:** Randomized color selection ensures that every generated painting has its own visual character while maintaining the iconic Hirst-inspired aesthetic.
 
 ---
 
